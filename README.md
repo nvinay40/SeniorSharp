@@ -7,7 +7,7 @@ Built with accessibility and privacy as first-class concerns.
 
 Most brain training apps are designed for younger users. They have small fonts, 
 complicated interfaces, aggressive notifications, and collect extensive user data. 
-Lumosity, Peak, and Elevate dominate the market but ignore the cognitive needs 
+There are many brain game apps that dominate the market but ignore the cognitive needs 
 of older adults. Seniors deserve an app built for them—not a scaled-down version 
 of something else.
 
