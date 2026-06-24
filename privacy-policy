@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: June 2026</p>
+    
+    <h2>We don't collect any personal data.</h2>
+    
+    <h3>WHAT WE DON'T DO:</h3>
+    <ul>
+        <li>We don't collect your name, age, email, phone, or location</li>
+        <li>We don't track your activity or gameplay</li>
+        <li>We don't store your scores on any server</li>
+        <li>We don't share your information with anyone</li>
+        <li>We don't use analytics or advertising networks</li>
+    </ul>
+    
+    <h3>WHAT WE DO:</h3>
+    <ul>
+        <li>Store your name locally on your phone (for greeting only)</li>
+        <li>Store your game scores locally on your phone</li>
+        <li>Allow you to manually share your scores via text/WhatsApp</li>
+    </ul>
+    
+    <h3>DATA YOU CONTROL:</h3>
+    <p>When you share scores with family, you edit the message yourself. We don't store or access that shared information.</p>
+    
+    <h3>OFFLINE FIRST:</h3>
+    <p>The app works completely offline. No internet required. No data is ever sent to our servers.</p>
+    
+    <h3>CONTACT US:</h3>
+    <p>Questions about privacy? Email: [your support email]</p>
+</body>
+</html>
