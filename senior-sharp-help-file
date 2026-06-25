@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senior Sharp – Help Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 40px 60px;
+    }
+
+    /* Cover */
+    .cover {
+      text-align: center;
+      padding: 60px 20px 50px;
+      border-bottom: 3px solid #52C263;
+      margin-bottom: 40px;
+    }
+    .cover .logo-box {
+      display: inline-block;
+      background: #52C263;
+      border-radius: 24px;
+      width: 110px;
+      height: 110px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .cover .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .cover h1 {
+      font-size: 38px;
+      color: #52C263;
+      letter-spacing: 1px;
+    }
+    .cover .tagline {
+      font-size: 18px;
+      color: #555;
+      margin-top: 8px;
+    }
+    .cover .version {
+      font-size: 14px;
+      color: #999;
+      margin-top: 16px;
+    }
+
+    /* Section headings */
+    h2 {
+      font-size: 26px;
+      color: #52C263;
+      border-left: 5px solid #52C263;
+      padding-left: 14px;
+      margin: 40px 0 16px;
+    }
+    h3 {
+      font-size: 20px;
+      color: #1a1a1a;
+      margin: 24px 0 10px;
+    }
+
+    p { margin-bottom: 12px; }
+
+    ul, ol {
+      padding-left: 24px;
+      margin-bottom: 14px;
+    }
+    li { margin-bottom: 8px; }
+
+    /* Game cards */
+    .game-card {
+      border: 2px solid #52C263;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      background: #f7fff8;
+    }
+    .game-card .game-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1a7c32;
+      margin-bottom: 6px;
+    }
+    .game-card .game-number {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #52C263;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    /* Tip boxes */
+    .tip {
+      background: #fff8e1;
+      border-left: 4px solid #f5a623;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+    .tip strong { color: #b37400; }
+
+    /* Score table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+    th {
+      background: #52C263;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) td { background: #f7fff8; }
+
+    /* Steps */
+    .steps {
+      counter-reset: step-counter;
+      list-style: none;
+      padding-left: 0;
+    }
+    .steps li {
+      counter-increment: step-counter;
+      padding: 10px 10px 10px 52px;
+      position: relative;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background: #f5f5f5;
+    }
+    .steps li::before {
+      content: counter(step-counter);
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      background: #52C263;
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    /* FAQ */
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-item .q {
+      font-weight: bold;
+      color: #1a7c32;
+      margin-bottom: 4px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 2px solid #52C263;
+      color: #666;
+      font-size: 15px;
+    }
+
+    /* Page break hints for printing */
+    @media print {
+      h2 { page-break-before: always; }
+      h2:first-of-type { page-break-before: avoid; }
+      .game-card { page-break-inside: avoid; }
+      .cover { page-break-after: always; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="logo-box"><img src="./assets/images/icon_512x512.png" alt="Senior Sharp Logo" /></div>
+    <h1>Senior Sharp</h1>
+    <p class="tagline">Brain Training App for Senior Citizens</p>
+    <p class="version">Help Guide &nbsp;•&nbsp; Version 1.0</p>
+  </div>
+
+  <!-- WHAT IS SENIOR SHARP -->
+  <h2>What is Senior Sharp?</h2>
+  <p>
+    Senior Sharp is a free daily brain training app specially designed for senior citizens. It helps you keep your mind active and sharp with fun, easy-to-play memory and thinking games.
+  </p>
+  <p>
+    Every day, you play a short workout of <strong>3 games</strong> that takes just <strong>10–12 minutes</strong>. Regular practice can improve your memory, focus, and thinking speed over time.
+  </p>
+
+  <div class="tip">
+    <strong>💡 Did You Know?</strong> Playing just 5–10 minutes of mental games daily can improve your brain's processing speed and cognitive power within 30 days.
+  </div>
+
+  <!-- HOW TO START -->
+  <h2>How to Start</h2>
+  <ol class="steps">
+    <li>Open the <strong>Senior Sharp</strong> app on your phone.</li>
+    <li>Choose your preferred language — <strong>English</strong> or <strong>हिन्दी</strong>.</li>
+    <li>Enter your name (optional) and tap <strong>Continue</strong>.</li>
+    <li>On the home screen, tap <strong>START WORKOUT</strong> to begin.</li>
+    <li>Choose your difficulty level: <strong>Easy</strong>, <strong>Medium</strong>, or <strong>Hard</strong>.</li>
+    <li>Play all 3 games and see your total score!</li>
+  </ol>
+
+  <!-- THE 3 GAMES -->
+  <h2>The 3 Games</h2>
+
+  <!-- Game 1 -->
+  <div class="game-card">
+    <div class="game-number">Game 1</div>
+    <div class="game-title">🃏 Card Matching</div>
+    <p>
+      A classic memory game. Cards are placed face-down on the screen. Flip two cards at a time to find matching pairs. Remember where each card is to match faster!
+    </p>
+    <h3>How to Play</h3>
+    <ol class="steps">
+      <li>Tap any card to flip it over.</li>
+      <li>Tap a second card to try and find its match.</li>
+      <li>If they match, both cards stay face-up. ✅</li>
+      <li>If they don't match, both cards flip back — remember where they were!</li>
+      <li>Find all matching pairs to complete the round.</li>
+      <li>Complete <strong>2 rounds</strong> to finish the game.</li>
+    </ol>
+    <h3>Difficulty Levels</h3>
+    <table>
+      <tr><th>Level</th><th>Grid Size</th><th>Pairs to Find</th></tr>
+      <tr><td>Easy</td><td>2×2</td><td>2 pairs</td></tr>
+      <tr><td>Medium</td><td>4×4</td><td>8 pairs</td></tr>
+      <tr><td>Hard</td><td>6×6</td><td>18 pairs</td></tr>
+    </table>
+    <div class="tip"><strong>💡 Tip:</strong> Take your time to look at all the cards before tapping. The more you remember, the higher your score!</div>
+  </div>
+
+  <!-- Game 2 -->
+  <div class="game-card">
+    <div class="game-number">Game 2</div>
+    <div class="game-title">👆 Sequence Tapping</div>
+    <p>
+      A memory sequence game. Coloured tiles light up one by one in a specific order. Watch carefully, then tap the tiles back in the <strong>same order</strong>.
+    </p>
+    <h3>How to Play</h3>
+    <ol class="steps">
+      <li>Watch the tiles light up in sequence — don't tap yet!</li>
+      <li>When it says <strong>"Your Turn!"</strong>, tap the tiles in the same order.</li>
+      <li>Get it right to complete the round. Get it wrong and the round ends.</li>
+      <li>If you forget the sequence, tap <strong>WATCH AGAIN</strong> to replay it.</li>
+      <li>Complete <strong>2 rounds</strong> to finish the game.</li>
+    </ol>
+    <h3>Difficulty Levels</h3>
+    <table>
+      <tr><th>Level</th><th>Starting Sequence Length</th></tr>
+      <tr><td>Easy</td><td>3 tiles</td></tr>
+      <tr><td>Medium</td><td>4 tiles</td></tr>
+      <tr><td>Hard</td><td>5 tiles</td></tr>
+    </table>
+    <div class="tip"><strong>💡 Tip:</strong> Say the colours out loud as they light up — it helps your brain remember the order!</div>
+  </div>
+
+  <!-- Game 3 -->
+  <div class="game-card">
+    <div class="game-number">Game 3</div>
+    <div class="game-title">🔢 Quick Maths</div>
+    <p>
+      A mental arithmetic game. Simple addition and subtraction questions appear on screen. Choose the correct answer from 4 options as quickly as you can!
+    </p>
+    <h3>How to Play</h3>
+    <ol class="steps">
+      <li>Read the maths question shown on screen (e.g. <strong>7 + 5 = ?</strong>).</li>
+      <li>Tap the correct answer from the 4 options shown.</li>
+      <li>Answer before the timer runs out!</li>
+      <li>Each round has <strong>4 questions</strong>.</li>
+      <li>Complete <strong>2 rounds</strong> to finish the game.</li>
+    </ol>
+    <h3>Difficulty Levels</h3>
+    <table>
+      <tr><th>Level</th><th>Numbers Used</th><th>Time per Question</th></tr>
+      <tr><td>Easy</td><td>Single digit (1–9)</td><td>15 seconds</td></tr>
+      <tr><td>Medium</td><td>Two digit (10–99)</td><td>20 seconds</td></tr>
+      <tr><td>Hard</td><td>Three digit (100–999)</td><td>25 seconds</td></tr>
+    </table>
+    <div class="tip"><strong>💡 Tip:</strong> Don't rush — it's better to take 2 extra seconds and get it right than to tap the wrong answer quickly!</div>
+  </div>
+
+  <!-- SCORING -->
+  <h2>How Scoring Works</h2>
+  <p>Each game gives you points. Your total score is the sum of all 3 games.</p>
+
+  <h3>Card Matching Score</h3>
+  <ul>
+    <li><strong>10 points</strong> per matching pair found</li>
+    <li><strong>+25% bonus</strong> if you make 2 or fewer mistakes</li>
+    <li>Higher difficulty = more points (Medium ×1.5, Hard ×2)</li>
+  </ul>
+
+  <h3>Sequence Tapping Score</h3>
+  <ul>
+    <li>Points for each round completed correctly</li>
+    <li>Higher difficulty = more points</li>
+  </ul>
+
+  <h3>Quick Maths Score</h3>
+  <ul>
+    <li><strong>10 points</strong> per correct answer</li>
+    <li><strong>+20% bonus</strong> if you get all 4 questions right in a round</li>
+    <li>Higher difficulty = more points (Medium ×1.5, Hard ×2)</li>
+  </ul>
+
+  <div class="tip"><strong>💡 Tip:</strong> Play on Easy first to learn the games. Once you're comfortable, switch to Medium or Hard to earn more points!</div>
+
+  <!-- DAILY REMINDERS -->
+  <h2>Daily Reminders</h2>
+  <p>Senior Sharp can send you a daily reminder so you never forget your brain workout.</p>
+  <ol class="steps">
+    <li>Tap the <strong>☰ Menu</strong> button on the home screen.</li>
+    <li>Tap <strong>Settings</strong>.</li>
+    <li>Tap <strong>Notifications</strong>.</li>
+    <li>Turn notifications <strong>ON</strong> and choose your preferred reminder time.</li>
+  </ol>
+  <p>You will receive a daily notification at your chosen time reminding you to play.</p>
+
+  <!-- PROGRESS -->
+  <h2>Tracking Your Progress</h2>
+  <p>See how your brain is improving over time!</p>
+  <ol class="steps">
+    <li>Tap the <strong>☰ Menu</strong> button on the home screen.</li>
+    <li>Tap <strong>Progress</strong>.</li>
+  </ol>
+  <p>You will see:</p>
+  <ul>
+    <li>Your <strong>total games played</strong> and <strong>best score</strong></li>
+    <li>Your <strong>current streak</strong> — how many days in a row you've played</li>
+    <li>A <strong>weekly bar chart</strong> showing your daily scores</li>
+  </ul>
+  <p>Tap <strong>SHARE PROGRESS</strong> to share your progress image with family and friends on WhatsApp or any other app.</p>
+
+  <!-- SETTINGS -->
+  <h2>Settings</h2>
+  <p>Customise the app to suit your needs:</p>
+  <table>
+    <tr><th>Setting</th><th>What it does</th></tr>
+    <tr><td>Language</td><td>Switch between English and हिन्दी</td></tr>
+    <tr><td>Theme</td><td>Choose Light mode, Dark mode, or follow your phone's setting</td></tr>
+    <tr><td>Text Size</td><td>Make text Smaller or Larger</td></tr>
+    <tr><td>Notifications</td><td>Turn daily reminders on/off and set the time</td></tr>
+  </table>
+
+  <!-- FAQ -->
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <p class="q">Q: Do I need the internet to play?</p>
+    <p>No. Senior Sharp works completely offline. No internet connection is needed to play the games.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Q: Is the app free?</p>
+    <p>Yes, Senior Sharp is completely free. There are no hidden charges, subscriptions, or advertisements.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Q: Do I need to create an account?</p>
+    <p>No account is needed. Just open the app and start playing. All your progress is saved on your phone automatically.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Q: What happens if I don't finish the workout?</p>
+    <p>If you leave the app mid-workout, the session is marked as incomplete. Your progress for that day won't be counted. Simply start again from the home screen.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Q: Can I play more than once a day?</p>
+    <p>Yes! You can play as many times as you like. However, only one workout per day counts towards your streak.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Q: How do I change the language to Hindi?</p>
+    <p>Go to <strong>Menu → Settings → Language</strong> and tap <strong>हिन्दी</strong>. The whole app will switch to Hindi immediately.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Q: The text is too small. Can I make it bigger?</p>
+    <p>Yes! Go to <strong>Menu → Settings → Text Size</strong> and tap <strong>Large</strong>.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="q">Q: Will my scores be deleted if I uninstall the app?</p>
+    <p>Yes. All data is stored on your phone. If you uninstall the app, your scores and progress will be lost. Reinstalling starts fresh.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><img src="./assets/images/icon_512x512.png" alt="Logo" style="width:32px;height:32px;border-radius:8px;background:#52C263;vertical-align:middle;margin-right:8px;" /><strong>Senior Sharp</strong> — Brain training specially designed for senior citizens</p>
+    <p style="margin-top:8px;">Available free on Google Play Store</p>
+    <p style="margin-top:8px; color: #aaa;">© 2026 Senior Sharp. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
