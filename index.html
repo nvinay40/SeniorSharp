@@ -362,12 +362,35 @@
 </footer>
 
 <script>
-  // Pre-filled WhatsApp message with the Play Store link
+  // Builds the Play Store and WhatsApp links.
+  // If the page is opened from a tagged ad link, e.g.
+  //   https://seniorsharp.app/?utm_source=instagram&utm_medium=paid&utm_campaign=test1
+  // those tags are passed on to Google Play so Play Console can show installs per campaign.
+  // Nothing is stored and nothing is sent anywhere except in the links themselves.
   (function () {
-    var msg = "Saw this and thought of you. Simple daily brain games with big text and no ads. Free on Google Play: https://play.google.com/store/apps/details?id=com.seniorsharp.app&utm_source=website&utm_medium=whatsapp";
-    var href = "https://wa.me/?text=" + encodeURIComponent(msg);
+    var APP = "https://play.google.com/store/apps/details?id=com.seniorsharp.app";
+    var q = new URLSearchParams(window.location.search);
+    function clean(v) { return (v || "").replace(/[^A-Za-z0-9_\-.]/g, "").slice(0, 50); }
+    var src = clean(q.get("utm_source")) || "website";
+    var med = clean(q.get("utm_medium")) || "landing";
+    var camp = clean(q.get("utm_campaign")) || "none";
+
+    function playUrl(medium, content) {
+      var tags = "utm_source=" + src + "&utm_medium=" + medium + "&utm_campaign=" + camp + "&utm_content=" + content;
+      // Tags are added both directly and inside "referrer", the format Google's Play URL builder uses.
+      return APP + "&" + tags + "&referrer=" + encodeURIComponent(tags);
+    }
+
+    document.querySelectorAll(".btn-play").forEach(function (a, i) {
+      a.href = playUrl(med, i === 0 ? "hero" : "closing");
+    });
+
+    // Shorter link for WhatsApp, because the parent sees the whole link in the chat
+    var waPlay = APP + "&utm_source=" + src + "&utm_medium=whatsapp" + (camp !== "none" ? "&utm_campaign=" + camp : "");
+    var msg = "Saw this and thought of you. Simple daily brain games with big text and no ads. Free on Google Play: " + waPlay;
+    var wa = "https://wa.me/?text=" + encodeURIComponent(msg);
     document.querySelectorAll(".wa-link").forEach(function (a) {
-      a.href = href;
+      a.href = wa;
       a.target = "_blank";
       a.rel = "noopener";
     });
