@@ -78,7 +78,7 @@
   .alt { background: var(--bg-alt); }
 
   h1, h2, h3 { line-height: 1.2; margin: 0 0 16px; letter-spacing: -0.015em; }
-  h1 { font-size: clamp(36px, 7vw, 60px); font-weight: 800; }
+  h1 { font-size: clamp(26px, 7.6vw, 60px); font-weight: 800; }
   h2 { font-size: clamp(28px, 4.5vw, 38px); font-weight: 800; }
   h3 { font-size: 21px; font-weight: 700; margin-bottom: 6px; }
   p { margin: 0 0 16px; }
@@ -100,7 +100,8 @@
 
   /* Hero */
   .hero { padding: 24px 0 80px; }
-  .hero .wrap > div { max-width: 640px; }
+  .hero .wrap > div { max-width: 860px; }
+  .hero .lead, .hero .actions, .hero .trust { max-width: 640px; }
   .trust { margin: 4px 0 32px; padding-left: 14px; border-left: 3px solid rgba(255,255,255,.6); font-style: italic; font-size: 19px; color: rgba(255,255,255,.94); }
 
   .actions { display: flex; flex-direction: column; gap: 14px; max-width: 420px; }
@@ -215,7 +216,7 @@
   <section class="hero">
     <div class="wrap">
       <div>
-        <h1>Daily brain games, made for your parents.</h1>
+        <h1>Daily brain games,<br> made for your parents.</h1>
         <p class="lead">Free. No ads. Works without internet. Big text and big buttons, in their own language.</p>
         <p class="trust">Built by a son for his own parents</p>
 
