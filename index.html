@@ -387,7 +387,7 @@
     });
 
     // Shorter link for WhatsApp, because the parent sees the whole link in the chat
-    var waPlay = APP + "&utm_source=" + src + "&utm_medium=whatsapp" + (camp !== "none" ? "&utm_campaign=" + camp : "");
+    var waPlay = APP + "&referrer=" + encodeURIComponent("utm_source=" + src + "&utm_medium=whatsapp" + (camp !== "none" ? "&utm_campaign=" + camp : ""));
     var msg = "Saw this and thought of you. Simple daily brain games with big text and no ads. Free on Google Play: " + waPlay;
     var wa = "https://wa.me/?text=" + encodeURIComponent(msg);
     document.querySelectorAll(".wa-link").forEach(function (a) {
